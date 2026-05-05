@@ -1239,7 +1239,26 @@
     }
 
     .intro-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      grid-template-areas:
+        "world vibe"
+        "movement collision";
+      align-items: start;
+    }
+
+    .intro-world {
+      grid-area: world;
+      min-height: 168px;
+    }
+
+    .intro-vibe {
+      grid-area: vibe;
+      min-height: 168px;
+    }
+
+    .intro-movement {
+      grid-area: movement;
+      min-height: 260px;
     }
 
     .character-grid {
@@ -1320,12 +1339,17 @@
         var(--panel-strong);
     }
 
+    .intro-grid .intro-feature {
+      grid-area: collision;
+      min-height: 260px;
+    }
+
     .intro-feature-copy h3 {
       margin-bottom: 10px;
     }
 
     .intro-feature-copy p {
-      max-width: 38ch;
+      max-width: 34ch;
     }
 
     .intro-feature-tags {
@@ -1365,7 +1389,7 @@
       position: absolute;
       right: 6px;
       bottom: 0;
-      width: min(100%, 210px);
+      width: min(100%, 230px);
       height: auto;
       filter:
         drop-shadow(0 14px 24px rgba(0, 0, 0, 0.48))
@@ -1384,6 +1408,32 @@
       text-transform: uppercase;
       text-shadow: 2px 2px 0 #000;
       transform: rotate(-4deg);
+    }
+
+    @media (max-width: 780px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "world"
+          "vibe"
+          "movement"
+          "collision";
+      }
+
+      .intro-world,
+      .intro-vibe,
+      .intro-movement,
+      .intro-grid .intro-feature {
+        min-height: auto;
+      }
+
+      .intro-feature {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-feature-visual {
+        min-height: 180px;
+      }
     }
 
     .expect-showcase {
@@ -3600,15 +3650,15 @@
           </div>
 
           <div class="intro-grid">
-            <article class="word-card">
+            <article class="word-card intro-world">
               <h3>A World</h3>
               <p>Secret location. Neon shadows. Screens flickering with strange animated life.</p>
             </article>
-            <article class="word-card">
+            <article class="word-card intro-vibe">
               <h3>A Vibe</h3>
               <p>Underground, playful, chaotic and loud in all the right ways.</p>
             </article>
-            <article class="word-card">
+            <article class="word-card intro-movement">
               <h3>A Movement</h3>
               <p>Part rave, part live art happening, part surreal cartoon invasion.</p>
             </article>
