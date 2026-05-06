@@ -923,6 +923,7 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
       width: min(100%, 420px);
+      justify-self: center;
     }
 
     .hero-proof-card {
@@ -962,6 +963,8 @@
 
     .countdown-card {
       grid-column: 1 / -1;
+      justify-self: center;
+      width: 100%;
       padding: 18px;
       border: 3px solid #111;
       border-radius: 18px;
@@ -1203,14 +1206,19 @@
     }
 
     .hero-side-cta {
-      margin-top: 26px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
     }
 
     .hero-side-cta .button {
-      min-width: 220px;
-      padding: 0 34px;
+      width: min(100%, 430px);
+      min-height: 88px;
+      padding: 0 42px;
+      font-size: clamp(1.25rem, 2.8vw, 1.9rem);
+      letter-spacing: 0.05em;
       transform: rotate(-2deg);
-      box-shadow: 0 9px 0 #000, 0 18px 34px rgba(255, 47, 159, 0.24);
+      box-shadow: 0 11px 0 #000, 0 22px 40px rgba(255, 47, 159, 0.24);
     }
 
     .hero-side-cta .button:hover,
@@ -1257,11 +1265,11 @@
     }
 
     .intro-grid {
-      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      grid-template-columns: minmax(0, 1fr);
       grid-template-areas:
-        "world vibe"
-        "movement collision";
+        "collision";
       align-items: start;
+      justify-items: center;
     }
 
     .intro-world {
@@ -1360,6 +1368,7 @@
     .intro-grid .intro-feature {
       grid-area: collision;
       min-height: 260px;
+      width: min(100%, 900px);
     }
 
     .intro-feature-copy h3 {
