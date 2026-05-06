@@ -710,6 +710,7 @@
       font-size: clamp(3.2rem, 11vw, 7rem);
       line-height: 0.88;
       letter-spacing: 0.04em;
+      font-style: italic;
       color: #fcf8f2;
       -webkit-text-stroke: 4px #000;
       text-shadow:
@@ -2170,85 +2171,6 @@
       color: var(--text);
     }
 
-    .theme-toggle {
-      margin: 22px auto 0;
-      width: min(100%, 720px);
-      padding: 18px;
-      border: 3px solid #111;
-      border-radius: 22px;
-      background:
-        radial-gradient(circle at top right, rgba(255, 47, 159, 0.1), transparent 26%),
-        radial-gradient(circle at bottom left, rgba(198, 255, 25, 0.1), transparent 26%),
-        rgba(10, 10, 10, 0.94);
-      box-shadow: var(--shadow-strong);
-    }
-
-    .theme-toggle h3 {
-      margin: 0;
-      font-family: "Luckiest Guy", cursive;
-      font-size: clamp(1.35rem, 3vw, 1.8rem);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--text);
-      text-shadow: 2px 2px 0 #000;
-    }
-
-    .theme-toggle p {
-      margin: 10px 0 0;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    .theme-toggle-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      margin-top: 16px;
-    }
-
-    .theme-toggle-group + .theme-toggle-group {
-      margin-top: 18px;
-    }
-
-    .theme-toggle-group-label {
-      display: inline-block;
-      margin-top: 6px;
-      color: var(--yellow);
-      font-family: "Permanent Marker", cursive;
-      font-size: 0.84rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .theme-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 52px;
-      padding: 0 20px;
-      border: 3px solid #000;
-      border-radius: 16px 999px 16px 999px;
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text);
-      font-family: "Permanent Marker", cursive;
-      font-size: 0.9rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      cursor: pointer;
-      box-shadow: 0 6px 0 #000;
-      transition: transform 160ms ease, background 160ms ease, color 160ms ease;
-    }
-
-    .theme-button:hover {
-      transform: translateY(-3px);
-    }
-
-    .theme-button.is-active {
-      background: linear-gradient(90deg, var(--pink), var(--yellow));
-      color: #10090a;
-    }
-
     body[data-colorway="poster-pop"] {
       --bg: #f0eadb;
       --bg-soft: #ece3d2;
@@ -3533,15 +3455,15 @@
               <div class="hero-main">
                 <div class="hero-graffiti-slash" aria-hidden="true"></div>
                 <div class="hero-graffiti-word" aria-hidden="true">cartoon chaos</div>
-                <span class="eyebrow">The world’s first cartoon rave</span>
+                <span class="eyebrow">WORLDS FIRST CARTOON RAVE</span>
                 <h1 class="hero-title">
                   <span class="hero-title-word">SQWARK</span>
                   <span class="hero-title-tag">The Cartoon Rave</span>
                 </h1>
-                <p class="hero-subheading"><span class="tagline-scratch">Launch night. Ticket sales. Total cartoon chaos.</span></p>
+                <p class="hero-subheading"><span class="tagline-scratch">Launch night. Ticket sales. Total cartoon chaos. Launch night.</span></p>
                 <p class="hero-copy">
-                  This isn’t a party. It’s a world. A hand-drawn collision of underground rave energy,
-                  animated chaos, live art, bizarre performances and late-night Brighton madness.
+                  This isn't a party, it's a BIG collision of underground rave energy, top animation,
+                  live art, bazaar acts and late-night Brighton weird.
                 </p>
 
                 <div class="hero-actions">
@@ -3672,18 +3594,6 @@
           </div>
 
           <div class="intro-grid">
-            <article class="word-card intro-world">
-              <h3>A World</h3>
-              <p>Secret location. Neon shadows. Screens flickering with strange animated life.</p>
-            </article>
-            <article class="word-card intro-vibe">
-              <h3>A Vibe</h3>
-              <p>Underground, playful, chaotic and loud in all the right ways.</p>
-            </article>
-            <article class="word-card intro-movement">
-              <h3>A Movement</h3>
-              <p>Part rave, part live art happening, part surreal cartoon invasion.</p>
-            </article>
             <article class="word-card intro-feature">
               <div class="intro-feature-copy">
                 <h3>The Collision</h3>
@@ -4129,28 +4039,6 @@
     <footer class="footer">
       <div class="container">
         <p><strong>SQWARK - The Cartoon Rave</strong> • Secret location on Brighton promenade • Fully licensed • 18+</p>
-        <div class="theme-toggle">
-          <h3>Pick A Direction</h3>
-          <p>Choose the layout structure separately from the colourway so we can compare ideas properly.</p>
-          <div class="theme-toggle-group">
-            <span class="theme-toggle-group-label">Layout</span>
-            <div class="theme-toggle-buttons" role="group" aria-label="Layout selector">
-              <button class="theme-button is-active" type="button" data-layout-option="standard">Standard Layout</button>
-              <button class="theme-button" type="button" data-layout-option="editorial">Chaos Editorial Layout</button>
-            </div>
-          </div>
-          <div class="theme-toggle-group">
-            <span class="theme-toggle-group-label">Colourway</span>
-            <div class="theme-toggle-buttons" role="group" aria-label="Colourway selector">
-              <button class="theme-button is-active" type="button" data-colorway-option="rave-neon">Rave Neon</button>
-              <button class="theme-button" type="button" data-colorway-option="poster-pop">Poster Pop</button>
-              <button class="theme-button" type="button" data-colorway-option="basement-blue">Basement Blue</button>
-              <button class="theme-button" type="button" data-colorway-option="metro-zine">Metro Zine</button>
-              <button class="theme-button" type="button" data-colorway-option="confetti-kick">Confetti Kick</button>
-              <button class="theme-button" type="button" data-colorway-option="blob-wave">Blob Wave</button>
-            </div>
-          </div>
-        </div>
       </div>
     </footer>
   </div>
@@ -4158,46 +4046,6 @@
     (function () {
       const countdown = document.getElementById("countdown");
       const caption = document.getElementById("countdown-caption");
-      const layoutButtons = Array.from(document.querySelectorAll("[data-layout-option]"));
-      const colorwayButtons = Array.from(document.querySelectorAll("[data-colorway-option]"));
-      const body = document.body;
-      const layoutStorageKey = "sqwark-layout";
-      const colorwayStorageKey = "sqwark-colorway";
-
-      function applyLayout(layout) {
-        body.dataset.layout = layout;
-        layoutButtons.forEach((button) => {
-          button.classList.toggle("is-active", button.dataset.layoutOption === layout);
-        });
-      }
-
-      function applyColorway(colorway) {
-        body.dataset.colorway = colorway;
-        colorwayButtons.forEach((button) => {
-          button.classList.toggle("is-active", button.dataset.colorwayOption === colorway);
-        });
-      }
-
-      const savedLayout = window.localStorage.getItem(layoutStorageKey) || "standard";
-      const savedColorway = window.localStorage.getItem(colorwayStorageKey) || "rave-neon";
-      applyLayout(savedLayout);
-      applyColorway(savedColorway);
-
-      layoutButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          const layout = button.dataset.layoutOption;
-          applyLayout(layout);
-          window.localStorage.setItem(layoutStorageKey, layout);
-        });
-      });
-
-      colorwayButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          const colorway = button.dataset.colorwayOption;
-          applyColorway(colorway);
-          window.localStorage.setItem(colorwayStorageKey, colorway);
-        });
-      });
 
       if (countdown) {
         const target = new Date(countdown.dataset.eventStart);
