@@ -3145,6 +3145,11 @@
     }
 
     @media (max-width: 640px) {
+      .hero-grid {
+        display: flex;
+        flex-direction: column;
+      }
+
       .topbar-inner {
         padding: 12px 14px;
       }
@@ -3154,7 +3159,15 @@
       }
 
       .hero-visual {
+        display: contents;
+      }
+
+      .hero-stage {
         order: 1;
+      }
+
+      .hero-proof {
+        order: 3;
       }
 
       .nav-badge {
