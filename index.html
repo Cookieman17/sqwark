@@ -1440,8 +1440,27 @@
         grid-template-columns: 1fr;
       }
 
+      .intro-feature-tags {
+        display: none;
+      }
+
       .intro-feature-visual {
-        min-height: 180px;
+        min-height: 210px;
+      }
+
+      .intro-feature-visual img {
+        left: 50%;
+        right: auto;
+        bottom: 0;
+        width: min(100%, 210px);
+        transform: translateX(-50%);
+      }
+
+      .intro-feature-note {
+        top: 12px;
+        left: 16px;
+        max-width: none;
+        transform: none;
       }
     }
 
@@ -3617,7 +3636,7 @@
                 </div>
               </div>
               <div class="intro-feature-visual" aria-hidden="true">
-                <div class="intro-feature-note">Not a normal night out</div>
+                <div class="intro-feature-note">SQWARK</div>
                 <img src="sqwark-glow-doll-1-image.png" alt="">
               </div>
             </article>
