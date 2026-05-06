@@ -1209,6 +1209,10 @@
       box-shadow: 0 11px 0 #000, 0 22px 38px rgba(255, 47, 159, 0.32);
     }
 
+    .mobile-after-hero-cta {
+      display: none;
+    }
+
     .section-heading {
       display: flex;
       flex-direction: column;
@@ -3146,6 +3150,15 @@
     }
 
     @media (max-width: 640px) {
+      .mobile-after-hero-cta {
+        display: block;
+        margin-top: 18px;
+      }
+
+      .mobile-after-hero-cta .button {
+        width: 100%;
+      }
+
       .hero-grid {
         display: flex;
         flex-direction: column;
@@ -3598,6 +3611,14 @@
           </div>
         </div>
       </section>
+
+      <div class="mobile-after-hero-cta">
+        <div class="container">
+          <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
+            Buy Tickets
+          </a>
+        </div>
+      </div>
 
       <section id="what-is-sqwark">
         <div class="container">
