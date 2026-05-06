@@ -1201,6 +1201,23 @@
       font-weight: 700;
     }
 
+    .hero-side-cta {
+      margin-top: 26px;
+    }
+
+    .hero-side-cta .button {
+      min-width: 220px;
+      padding: 0 34px;
+      transform: rotate(-2deg);
+      box-shadow: 0 9px 0 #000, 0 18px 34px rgba(255, 47, 159, 0.24);
+    }
+
+    .hero-side-cta .button:hover,
+    .hero-side-cta .button:focus-visible {
+      transform: translateY(-2px) rotate(-3deg);
+      box-shadow: 0 11px 0 #000, 0 22px 38px rgba(255, 47, 159, 0.32);
+    }
+
     .section-heading {
       display: flex;
       flex-direction: column;
@@ -3380,7 +3397,7 @@
     }
   </style>
 </head>
-<body data-layout="standard" data-colorway="confetti-kick">
+<body data-layout="standard" data-colorway="rave-neon">
   <div class="page-shell">
     <div class="bg-graffiti" aria-hidden="true">
       <span class="bg-tag bg-tag-pink bg-tag-a">Get Weird</span>
@@ -3547,6 +3564,11 @@
                 </div>
 
                 <div class="urgency">Limited capacity. Limited tickets. No second chance if this sells out.</div>
+                <div class="hero-side-cta">
+                  <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
+                    Buy Tickets
+                  </a>
+                </div>
               </div>
               <div class="hero-visual" aria-hidden="true">
                 <div class="hero-stage">
@@ -4120,11 +4142,11 @@
           <div class="theme-toggle-group">
             <span class="theme-toggle-group-label">Colourway</span>
             <div class="theme-toggle-buttons" role="group" aria-label="Colourway selector">
-              <button class="theme-button" type="button" data-colorway-option="rave-neon">Rave Neon</button>
+              <button class="theme-button is-active" type="button" data-colorway-option="rave-neon">Rave Neon</button>
               <button class="theme-button" type="button" data-colorway-option="poster-pop">Poster Pop</button>
               <button class="theme-button" type="button" data-colorway-option="basement-blue">Basement Blue</button>
               <button class="theme-button" type="button" data-colorway-option="metro-zine">Metro Zine</button>
-              <button class="theme-button is-active" type="button" data-colorway-option="confetti-kick">Confetti Kick</button>
+              <button class="theme-button" type="button" data-colorway-option="confetti-kick">Confetti Kick</button>
               <button class="theme-button" type="button" data-colorway-option="blob-wave">Blob Wave</button>
             </div>
           </div>
@@ -4157,7 +4179,7 @@
       }
 
       const savedLayout = window.localStorage.getItem(layoutStorageKey) || "standard";
-      const savedColorway = window.localStorage.getItem(colorwayStorageKey) || "confetti-kick";
+      const savedColorway = window.localStorage.getItem(colorwayStorageKey) || "rave-neon";
       applyLayout(savedLayout);
       applyColorway(savedColorway);
 
