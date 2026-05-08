@@ -769,20 +769,25 @@
 
     .impact-word {
       display: inline-block;
-      margin: 0 0.12em;
-      padding: 0.02em 0.3em 0.08em;
-      border: 2px solid #111;
-      border-radius: 999px 20px 999px 20px;
-      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      margin: 0 0.16em;
+      padding: 0.12em 0.5em 0.18em;
+      border: 3px solid #111;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 22% 30%, #fff6aa 0 18%, transparent 19%),
+        linear-gradient(135deg, #ffd84a, #ff8dd1 72%);
       color: #14060d;
       font-family: "Luckiest Guy", cursive;
-      font-size: 1.08em;
-      line-height: 1;
-      letter-spacing: 0.04em;
+      font-size: 1.34em;
+      line-height: 0.92;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35);
-      box-shadow: 0 4px 0 #000;
-      transform: rotate(-3deg);
+      text-shadow:
+        1px 1px 0 rgba(255, 255, 255, 0.45),
+        2px 2px 0 rgba(0, 0, 0, 0.18);
+      box-shadow: 0 6px 0 #000, 0 10px 18px rgba(255, 141, 209, 0.22);
+      clip-path: polygon(4% 24%, 18% 8%, 36% 14%, 50% 0%, 64% 14%, 84% 6%, 96% 24%, 100% 48%, 94% 74%, 80% 92%, 58% 86%, 44% 100%, 26% 88%, 8% 94%, 0 68%, 2% 42%);
+      transform: rotate(-4deg) translateY(-1px);
       white-space: nowrap;
       vertical-align: middle;
     }
