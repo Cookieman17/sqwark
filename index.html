@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQWARK - The Cartoon Rave</title>
+  <title>SQWARK - Postponed Update</title>
   <meta
     name="description"
-    content="SQWARK - The world’s first cartoon rave. Secure your spot for Brighton’s surreal, underground animated rave experience."
+    content="SQWARK is postponed until further notice. Register your interest to hear the new date, venue update and next launch news first."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2023,6 +2023,122 @@
       font-size: 0.94rem;
     }
 
+    .update-card-copy {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .update-card-copy strong {
+      color: var(--text);
+      font-size: 1.18rem;
+    }
+
+    .update-card-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .interest-form {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .interest-form-row {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .interest-field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .interest-label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--yellow);
+    }
+
+    .interest-input {
+      width: 100%;
+      min-height: 56px;
+      padding: 14px 16px;
+      border: 2px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      font: inherit;
+      transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .interest-input::placeholder {
+      color: rgba(245, 240, 232, 0.44);
+    }
+
+    .interest-input:focus {
+      outline: none;
+      border-color: rgba(198, 255, 25, 0.75);
+      box-shadow: 0 0 0 4px rgba(198, 255, 25, 0.14);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .interest-checkbox {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: start;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.96rem;
+    }
+
+    .interest-checkbox input {
+      margin-top: 4px;
+      accent-color: var(--lime);
+    }
+
+    .interest-card-note,
+    .interest-status {
+      margin: 0;
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+
+    .interest-card-note {
+      color: var(--muted);
+    }
+
+    .interest-status {
+      min-height: 1.6em;
+      color: var(--yellow);
+    }
+
+    .interest-status[data-state="success"] {
+      color: var(--lime);
+    }
+
+    .interest-status[data-state="error"] {
+      color: #ff8bbf;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     .placeholder-box {
       margin-top: 16px;
       padding: 16px;
@@ -3209,6 +3325,10 @@
         order: 3;
       }
 
+      .interest-form-row {
+        grid-template-columns: 1fr;
+      }
+
       .nav-badge {
         font-size: 0.82rem;
       }
@@ -3490,7 +3610,7 @@
     <header class="topbar">
       <div class="topbar-inner">
         <a class="brand" href="#top">SQWARK</a>
-        <span class="nav-badge">Tuesday 19 May 2026 • Brighton</span>
+        <span class="nav-badge">Postponed until further notice - Brighton</span>
       </div>
     </header>
 
@@ -3524,48 +3644,48 @@
               <div class="hero-main">
                 <div class="hero-graffiti-slash" aria-hidden="true"></div>
                 <div class="hero-graffiti-word" aria-hidden="true">cartoon rave</div>
-                <span class="eyebrow">WORLDS First cartoon rave</span>
+                <span class="eyebrow">Postponed until further notice</span>
                 <h1 class="hero-title">
                   <span class="hero-title-word">SQWARK</span>
-                  <span class="hero-title-tag">WORLDS First cartoon rave</span>
+                  <span class="hero-title-tag">Postponed until further notice</span>
                 </h1>
-                <p class="hero-subheading"><span class="tagline-scratch">Launch night</span></p>
-                <p class="hero-copy">
-                  This isn't a party, it's a BIG <span class="impact-word">collision</span> of underground rave energy, top animation,
-                  live art, bizarre acts and late-night Brighton weird.
+                <p class="hero-subheading"><span class="tagline-scratch">Important update</span></p>
+                                <p class="hero-copy">
+                  SQWARK has been postponed until further notice. We are rebuilding the next launch and everyone on the
+                  interest list will hear the new date, venue update and next ticket drop first.
                 </p>
 
-                <div class="hero-actions">
-                  <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
-                    Get Tickets
+                                <div class="hero-actions">
+                  <a class="button button-primary" href="#tickets">
+                    Register Interest
                   </a>
-                  <a class="button button-secondary" href="#what-to-expect">See Whats Coming</a>
+                  <a class="button button-secondary" href="#event-details">Read Update</a>
                 </div>
 
-                <div class="hero-trust">
-                  <span>Ticket holders get secret location</span>
+                                <div class="hero-trust">
+                  <span>Existing ticket holders will be contacted</span>
                   <span>Produced by deadbaby productions</span>
-                  <span>Adult content • 18+</span>
+                  <span>Join the interest list for first access</span>
                 </div>
 
-                <div class="hero-meta">
-                  <span>Secret location • Brighton</span>
-                  <span>9:30pm - 12:30am</span>
-                  <span>Fully licensed • 15 screens</span>
+                                <div class="hero-meta">
+                  <span>Brighton</span>
+                  <span>New date coming soon</span>
+                  <span>18+ when rescheduled</span>
                 </div>
 
-                <div class="urgency">tickets selling fast get yours now</div>
-                <div class="hero-side-cta">
-                  <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
-                    Buy Tickets
+                <div class="urgency">launch postponed until further notice</div>
+                                <div class="hero-side-cta">
+                  <a class="button button-primary" href="#tickets">
+                    Register Interest
                   </a>
                 </div>
               </div>
               <div class="hero-visual" aria-hidden="true">
                 <div class="hero-stage">
                   <div class="hero-stage-graffiti">
-                    <div class="hero-stage-word hero-stage-word--a">get in</div>
-                    <div class="hero-stage-word hero-stage-word--b">cartoon riot</div>
+                    <div class="hero-stage-word hero-stage-word--a">stay tuned</div>
+                    <div class="hero-stage-word hero-stage-word--b">launch paused</div>
                     <span class="hero-stage-doodle hero-stage-doodle--star">
                       <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M50 6 58 36 92 18 70 46 96 50 70 58 86 86 56 70 50 96 42 68 12 84 30 56 6 50 30 44 14 18 44 34Z"/>
@@ -3589,45 +3709,28 @@
                     <div class="hero-stage-frame hero-stage-frame--6"><img src="sqwark-dark-doll-1-image6.png" alt=""></div>
                   </div>
                 </div>
-                <div class="hero-proof">
+                                <div class="hero-proof">
                   <div class="hero-proof-card">
-                    <strong>15 Screens</strong>
-                    <span>Animated visuals, flood the room</span>
+                    <strong>Status</strong>
+                    <span>SQWARK is postponed until further notice while the next launch is reset.</span>
                   </div>
                   <div class="hero-proof-card">
-                    <strong>Secret Venue</strong>
-                    <span>Ticket holders to collect wristband on promenade, for escort to the venue From 9:30</span>
+                    <strong>Updates First</strong>
+                    <span>Register your email to hear the new date and venue update before the wider drop.</span>
                   </div>
                   <div class="hero-proof-card">
-                    <strong>18+ Only</strong>
-                    <span>Adult content. Fully licensed. Built for grown-up weirdos.</span>
+                    <strong>Existing Tickets</strong>
+                    <span>Current ticket holders will be contacted directly with the next steps.</span>
                   </div>
                   <div class="hero-proof-card">
-                    <strong>One Night</strong>
-                    <span>Tuesday 19 May 2026. 9:30pm to 12:30am</span>
+                    <strong>Next Drop</strong>
+                    <span>The rescheduled launch date, location details and ticket news are still to come.</span>
                   </div>
                   <div class="countdown-card">
-                    <span class="countdown-kicker">Count down to launch</span>
-                    <div class="countdown-grid" id="countdown" data-event-start="2026-05-19T21:30:00+01:00">
-                      <div class="countdown-unit">
-                        <span class="countdown-value" data-unit="days">00</span>
-                        <span class="countdown-label">Days</span>
-                      </div>
-                      <div class="countdown-unit">
-                        <span class="countdown-value" data-unit="hours">00</span>
-                        <span class="countdown-label">Hours</span>
-                      </div>
-                      <div class="countdown-unit">
-                        <span class="countdown-value" data-unit="minutes">00</span>
-                        <span class="countdown-label">Minutes</span>
-                      </div>
-                      <div class="countdown-unit">
-                        <span class="countdown-value" data-unit="seconds">00</span>
-                        <span class="countdown-label">Seconds</span>
-                      </div>
-                    </div>
-                    <div class="countdown-caption" id="countdown-caption">
-                      Looking forward to see you
+                    <span class="countdown-kicker">What happens now</span>
+                    <div class="update-card-copy">
+                      <strong>Join the interest list</strong>
+                      <p>Leave your email below and we will send the next confirmed update as soon as the rescheduled plan is locked.</p>
                     </div>
                   </div>
                 </div>
@@ -3637,10 +3740,10 @@
         </div>
       </section>
 
-      <div class="mobile-after-hero-cta">
+            <div class="mobile-after-hero-cta">
         <div class="container">
-          <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
-            Buy Tickets
+          <a class="button button-primary" href="#tickets">
+            Register Interest
           </a>
         </div>
       </div>
@@ -3779,7 +3882,7 @@
             <img src="sqwark-dark-doll-1-image4.png" alt="">
           </div>
           <div class="section-heading section-heading--tagged">
-            <span class="section-kicker">Event Details</span>
+            <span class="section-kicker">Update Details</span>
             <span class="doodle doodle-cross doodle-heading-cross" aria-hidden="true">
               <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round">
                 <path d="M14 14 50 50"/>
@@ -3788,30 +3891,31 @@
             </span>
           </div>
 
-          <div class="details-grid">
+                    <div class="details-grid">
             <article class="detail-card">
-              <h3>Date</h3>
-              <strong>Tuesday 19 May 2026</strong>
-              <p>get your tickets now before the week slips past.</p>
+              <h3>Status</h3>
+              <strong>Postponed until further notice</strong>
+              <p>We are reshaping the launch and will announce the new plan once it is ready.</p>
             </article>
             <article class="detail-card">
-              <h3>Time</h3>
-              <strong>9:30pm - 12:30am</strong>
+              <h3>Existing Tickets</h3>
+              <strong>Ticket holders will be contacted</strong>
+              <p>If you already bought a ticket, the SQWARK team will reach out directly with the next steps.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Next Date</h3>
+              <strong>To be announced</strong>
+              <p>Register your interest and we will send the new date first as soon as it is confirmed.</p>
             </article>
             <article class="detail-card">
               <h3>Location</h3>
-              <strong>Secret Brighton promenade spot</strong>
-              <p>Ticket holders will meeting spot details. for escort to venue.</p>
+              <strong>Brighton</strong>
+              <p>The rescheduled venue details will land with the next official update.</p>
             </article>
             <article class="detail-card">
-              <h3>Entry</h3>
-              <strong>18+ only</strong>
-              <p>ID required. Fully licensed venue.</p>
-            </article>
-            <article class="detail-card">
-              <h3>Content Note</h3>
-              <strong>Adult content</strong>
-              <p>Built for grown-ups. Expect edgy visuals and performances.</p>
+              <h3>Stay In The Loop</h3>
+              <strong>Email updates first</strong>
+              <p>Use the interest form below so the next drop lands straight with you.</p>
             </article>
           </div>
         </div>
@@ -3841,19 +3945,47 @@
             <div class="dark-doll-sticker" aria-hidden="true">
               <img src="sqwark-dark-doll-1-image.png" alt="">
             </div>
-            <div class="ticket-grid">
+                        <div class="ticket-grid">
               <div class="ticket-copy">
-                <span class="section-kicker">Tickets</span>
-                <h2>Secure Your Spot</h2>
+                <span class="section-kicker">Register Interest</span>
+                <h2>Stay First In Line</h2>
+                <p>SQWARK is paused for now, but the next update will go to the interest list first. Leave your email and we will share the new date, venue details and ticket news as soon as they are ready.</p>
+                <div class="ticket-urgency-strip">
+                  <strong>Private email list</strong>
+                  <p>This signup flow is designed to send entries to a private Google Sheet owned by the SQWARK team, not into the public site repo.</p>
+                </div>
               </div>
 
               <aside class="ticket-card">
-                <h3>Get Tickets Now</h3>
-                <p>Step inside SQWARK before this one disappears into the static.</p>
-                <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
-                  Get Tickets
-                </a>
-                <span class="ticket-link-note">Tickets are live now through Ticmint.</span>
+                <h3>Register your interest</h3>
+                <p>Drop your details below and we will keep you posted the second the rescheduled launch is ready.</p>
+                <form
+                  class="interest-form"
+                  id="interest-form"
+                  data-endpoint="YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL"
+                  novalidate
+                >
+                  <input class="visually-hidden" type="text" name="company" id="interest-company" tabindex="-1" autocomplete="off">
+                  <input type="hidden" name="source" value="sqwark-site">
+                  <div class="interest-form-row">
+                    <div class="interest-field">
+                      <label class="interest-label" for="interest-name">Name</label>
+                      <input class="interest-input" id="interest-name" name="name" type="text" autocomplete="name" placeholder="Optional">
+                    </div>
+                    <div class="interest-field">
+                      <label class="interest-label" for="interest-email">Email</label>
+                      <input class="interest-input" id="interest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                  </div>
+                  <label class="interest-checkbox" for="interest-consent">
+                    <input id="interest-consent" name="consent" type="checkbox" value="yes" required>
+                    <span>I am happy for SQWARK to email me about the rescheduled event, venue update and future ticket news.</span>
+                  </label>
+                  <button class="button button-primary" type="submit">Register Interest</button>
+                  <p class="ticket-link-note">Existing ticket holders do not need to fill this in unless they also want to join the broader update list.</p>
+                  <p class="interest-card-note">Collector endpoint placeholder is wired for a private Google Sheet setup included in this repo.</p>
+                  <p class="interest-status" id="interest-form-status" role="status" aria-live="polite"></p>
+                </form>
               </aside>
             </div>
           </div>
@@ -3897,17 +4029,17 @@
 
       <section>
         <div class="container">
-          <div class="final-cta">
+                    <div class="final-cta">
             <div class="rave-gull-sticker" aria-hidden="true">
               <img src="sqwark-rave-gull-1-image.png" alt="">
             </div>
             <span class="section-kicker">Final Call</span>
-            <h2>Ready To Experience SQWARK?</h2>
+            <h2>Stay Ready For The Relaunch</h2>
             <p>
-              The screens are flickering. The room is waiting. Capacity is tight and the weirdness won’t wait around.
+              The launch is on pause, but the next date is still coming. Join the interest list now and we will send the relaunch news straight to you.
             </p>
-            <a class="button button-primary" href="https://sqwark.ticmint.com/event/sqwark-the-cartoon-rave-16405" target="_blank" rel="noreferrer">
-              Get Tickets
+            <a class="button button-primary" href="#tickets">
+              Register Interest
             </a>
           </div>
         </div>
@@ -3916,57 +4048,86 @@
 
     <footer class="footer">
       <div class="container">
-        <p><strong>SQWARK - The Cartoon Rave</strong> • Secret location on Brighton promenade • Fully licensed • 18+</p>
+        <p><strong>SQWARK</strong> - Postponed until further notice - Brighton - Join the interest list for the next update</p>
       </div>
     </footer>
   </div>
-  <script>
+    <script>
     (function () {
-      const countdown = document.getElementById("countdown");
-      const caption = document.getElementById("countdown-caption");
+      const interestForm = document.getElementById("interest-form");
+      const interestStatus = document.getElementById("interest-form-status");
 
-      if (countdown) {
-        const target = new Date(countdown.dataset.eventStart);
-        const units = {
-          days: countdown.querySelector('[data-unit="days"]'),
-          hours: countdown.querySelector('[data-unit="hours"]'),
-          minutes: countdown.querySelector('[data-unit="minutes"]'),
-          seconds: countdown.querySelector('[data-unit="seconds"]')
-        };
+      if (interestForm && interestStatus) {
+        interestForm.addEventListener("submit", async function (event) {
+          event.preventDefault();
 
-        function pad(value) {
-          return String(value).padStart(2, "0");
-        }
+          const endpoint = (interestForm.dataset.endpoint || "").trim();
+          const emailField = interestForm.querySelector("#interest-email");
+          const consentField = interestForm.querySelector("#interest-consent");
+          const honeypotField = interestForm.querySelector("#interest-company");
+          const submitButton = interestForm.querySelector('button[type="submit"]');
 
-        function updateCountdown() {
-          const now = new Date();
-          const diff = target.getTime() - now.getTime();
-
-          if (diff <= 0) {
-            units.days.textContent = "00";
-            units.hours.textContent = "00";
-            units.minutes.textContent = "00";
-            units.seconds.textContent = "00";
-            if (caption) {
-              caption.textContent = "SQWARK has started. Get in if doors are still live.";
-            }
+          if (!emailField || !consentField || !submitButton) {
             return;
           }
 
-          const totalSeconds = Math.floor(diff / 1000);
-          const days = Math.floor(totalSeconds / 86400);
-          const hours = Math.floor((totalSeconds % 86400) / 3600);
-          const minutes = Math.floor((totalSeconds % 3600) / 60);
-          const seconds = totalSeconds % 60;
+          if (honeypotField && honeypotField.value.trim() !== "") {
+            interestStatus.dataset.state = "success";
+            interestStatus.textContent = "Thanks. You are on the list.";
+            interestForm.reset();
+            return;
+          }
 
-          units.days.textContent = pad(days);
-          units.hours.textContent = pad(hours);
-          units.minutes.textContent = pad(minutes);
-          units.seconds.textContent = pad(seconds);
-        }
+          if (!emailField.value.trim()) {
+            interestStatus.dataset.state = "error";
+            interestStatus.textContent = "Please add your email address.";
+            emailField.focus();
+            return;
+          }
 
-        updateCountdown();
-        window.setInterval(updateCountdown, 1000);
+          if (!emailField.checkValidity()) {
+            interestStatus.dataset.state = "error";
+            interestStatus.textContent = "Please enter a valid email address.";
+            emailField.focus();
+            return;
+          }
+
+          if (!consentField.checked) {
+            interestStatus.dataset.state = "error";
+            interestStatus.textContent = "Please tick the consent box so we can contact you.";
+            consentField.focus();
+            return;
+          }
+
+          if (!endpoint || endpoint.indexOf("YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL") !== -1) {
+            interestStatus.dataset.state = "error";
+            interestStatus.textContent = "The signup collector still needs to be connected. Use the setup guide in the repo to add the Google Apps Script endpoint.";
+            return;
+          }
+
+          const formData = new FormData(interestForm);
+
+          interestStatus.dataset.state = "";
+          interestStatus.textContent = "Registering your interest...";
+          submitButton.disabled = true;
+
+          try {
+            await fetch(endpoint, {
+              method: "POST",
+              body: formData,
+              mode: "no-cors"
+            });
+
+            interestForm.reset();
+            interestStatus.dataset.state = "success";
+            interestStatus.textContent = "You are on the interest list. We will be in touch when the new launch details are ready.";
+          } catch (error) {
+            interestStatus.dataset.state = "error";
+            interestStatus.textContent = "Something went wrong sending your details. Please try again in a moment.";
+          } finally {
+            submitButton.disabled = false;
+          }
+        });
       }
     }());
   </script>
